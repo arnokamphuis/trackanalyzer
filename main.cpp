@@ -1,8 +1,12 @@
 #include <iostream>
 
-using namespace std;
+#include "Analyzer.h"
 
 int main() {
-    cout << "Hello, World!" << endl;
+    char xmlFile[] = "C:\\Users\\arno\\Documents\\git\\trackanalyzer\\data\\day10.xml";
+
+    Analyzer analyzer;
+    analyzer.loadData(xmlFile);
+    analyzer.updateSpeeds();
     return 0;
 }
